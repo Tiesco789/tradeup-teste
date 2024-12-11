@@ -1,11 +1,7 @@
-import './assets/main.css'
+import { createApp } from 'vue';
+import HomeView from './HomeView.vue';
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import router from './router'; // Certifique-se de importar o router
+import store from './store'; // Certifique-se de importar o store
 
-const app = createApp(App)
-
-app.use(router)
-
-app.mount('#app')
+createApp(HomeView).use(router).use(store).mount('#app');
