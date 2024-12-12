@@ -1,8 +1,8 @@
 import { createApp } from 'vue';
 import './assets/main.css';
-import HomeView from './HomeView.vue';
+import App from './App.vue'; // Use o componente principal da aplicação
 
 import router from './router';
 import store from './store';
 
-createApp(HomeView).use(router).use(store).mount('#app');
+createApp(App).use(router).use(store).mount('#app');
