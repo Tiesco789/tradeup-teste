@@ -7,7 +7,12 @@
     </form>
     <ul>
       <li v-for="(cep, index) in ceps" :key="index">
-        {{ cep.cep }} - {{ cep.logradouro }}, {{ cep.localidade }}
+        <!-- CEP: 89.218-000 -->
+        <!-- UF, Localidade -->
+        <!-- Bairro, Logradouro - Complemento -->
+        <h4>{{ cep.cep }}</h4>
+        <p>{{ cep.uf }}, {{ cep.localidade }}</p>
+        <span>{{ cep.bairro }}, {{ cep.logradouro }} - {{ cep.complemento }}</span>
       </li>
     </ul>
   </div>
